@@ -1,0 +1,73 @@
+\documentclass[12pt, a4paper]{article}
+
+% Packages
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multicol}
+
+\geometry{
+a4paper,
+left=10mm,
+right=10mm,
+top=10mm,
+bottom=15mm}
+
+\font\titlefont=cmr12 at 40pt
+
+% Title w/ JAM logo
+\title{
+	\includegraphics[width=10cm]{jam-logo}\vspace{2ex} 
+	\\ 
+	\titlefont Meeting Minutes\vspace{-3ex}
+}
+\date{
+\huge (MeetingDate) 2020 \\ \vspace{0.5ex}
+\large Started: (StartTime) \quad Finished: (FinishTime)}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%
+% Front Page
+%%%%%%%%%%%%%%%%%%%
+\maketitle
+% Attendees Column
+\begin{minipage}[t]{0.5\textwidth}
+\section*{Attendees}
+\begin{itemize}
+\item Attendee 1
+\item Attendee 2
+\end{itemize}
+\end{minipage}
+% Absentees Column
+\begin{minipage}[t]{0.5\textwidth}
+\section*{Absentees}
+\begin{itemize}
+\item Absentee 1
+\item Absentee 2
+\end{itemize}
+\end{minipage}
+\pagebreak
+%%%%%%%%%%%%%%%%%%%
+% Second Page (Agenda)
+%%%%%%%%%%%%%%%%%%%
+\section*{Agenda}
+The following items need to be completed or discussed by the close of this meeting, and they reflect the purpose of the meeting.
+\begin{enumerate}
+\item Item 1
+\item Item 2
+\item Item 3
+\end{enumerate}
+Each item listed here is dicussed in appropriate detail within the pages following.
+\pagebreak
+\section{Item 1}
+\section{Item 2}
+\section{Item 3}
+\pagebreak
+\section*{Tasks}
+The following provides an overview of tasks that were assigned during this meeting. The tasks are ordered by the role of the assigned.
+\setcounter{section}{0}
+\section{Task 1}
+\section{Task 2}
+\section*{Future Meetings}
+The date of the next meeting is to be decided.
+% The date of the next meeting is 2 weeks from today.
+\end{document}
